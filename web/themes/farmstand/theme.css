@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:wght@400;500;700;800&family=Overpass+Mono:wght@500;700&display=swap');
+/* Farmstand: a night market of seed packets; growers pick a pool like a packet off the rack. Loam black, sprout green, packet paper, wheat gold, terracotta. */
+:root{--scheme:dark;--bg:#0F1411;--surface:#161D18;--surface-2:#1D2620;--input-bg:#0A0E0B;--tile:#1D2620;
+ --ink:#F4EEDC;--ink-2:#B9BCA6;--line:#26322A;--line-strong:#677A69;
+ --accent:#7CDB6A;--accent-hover:#9AE88A;--accent-ink:#0B1A08;--accent-text:#8FE27E;--link:#F0C75E;--focus:#F0C75E;
+ --danger:#F07560;--danger-bg:#2B1410;--danger-text:#FFA593;--scrim:rgba(5,8,6,.8);
+ --radius-sm:6px;--radius-md:12px;--radius-lg:18px;--radius-btn:12px;--radius-pill:999px;--border-w:1px;
+ --shadow-1:0 16px 36px rgba(0,0,0,.45);--shadow-2:0 28px 64px rgba(0,0,0,.6);--shadow-btn:0 4px 0 rgba(0,0,0,.35);
+ --font-display:'Young Serif',Georgia,serif;--font-body:'Karla',system-ui,sans-serif;--font-label:'Karla',system-ui,sans-serif;--font-mono:'Overpass Mono',ui-monospace,monospace;
+ --display-weight:400;--display-tracking:-0.01em;--display-case:none;--label-tracking:.14em;
+ --hero-bg:radial-gradient(50% 55% at 72% 38%,rgba(124,219,106,.22),transparent 70%),radial-gradient(40% 45% at 24% 84%,rgba(240,199,94,.16),transparent 70%),var(--bg);
+ --hero-pattern:repeating-linear-gradient(170deg,transparent 0 26px,rgba(185,188,166,.10) 26px 28px);--hero-pattern-size:auto;--hero-pattern-opacity:1;
+ --chip-bg:rgba(22,29,24,.9);--live:#7CDB6A;--live-ring:rgba(124,219,106,.28);--art-glow:radial-gradient(circle,rgba(124,219,106,.45),rgba(240,199,94,.22) 55%,transparent 72%);--ticker-bg:#141B16}
+/* Signature: packet-paper steps with a punched hanger hole, furrow-ruled features, rows of sprouts. */
+.steps li{position:relative;padding-top:44px;background:#F3EBD3;color:#1E2318;border:0;border-radius:var(--radius-md) var(--radius-md) var(--radius-lg) var(--radius-lg)}
+.steps li:after{content:'';position:absolute;top:14px;left:50%;width:34px;height:12px;margin-left:-17px;border-radius:999px;background:var(--bg)}
+.steps li h3{color:#1E2318}.steps li p{color:#4A4F3E}
+.steps li:before{color:#2F6B25}
+.features div{border-left:0;padding:16px 0 16px 0;border-bottom:2px dotted var(--line-strong)}
+.features h3:before{content:'';display:inline-block;width:10px;height:10px;margin-right:10px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--accent)}
+.cta-band{background:linear-gradient(180deg,transparent 60%,rgba(124,219,106,.10)),repeating-linear-gradient(90deg,transparent 0 46px,rgba(103,122,105,.18) 46px 48px),var(--surface)}
+.ticker span:after{width:9px;height:9px;border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
+h1{font-size:clamp(2.7rem,6.6vw,5.4rem)}
+
+/* App: seed packets. */
+.packet-form-head h2{margin:8px 0 6px}
+.packet-form-head p{margin:0}
+.pick{display:grid;gap:8px}
+.packets{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:22px}
+.packet{display:flex;flex-direction:column;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;scroll-margin-top:24px}
+.packet:target{box-shadow:0 0 0 2px var(--link)}
+.packet-top{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) 64px;gap:12px;align-items:center;padding:18px 18px 16px;background:#F3EBD3;color:#1E2318}
+.packet-top:before{content:'';position:absolute;top:8px;left:50%;width:30px;height:9px;margin-left:-15px;border-radius:999px;background:var(--surface-2)}
+.packet-no{display:grid;place-items:center;width:52px;height:52px;border:2px solid #1E2318;border-radius:50%;font-family:var(--font-mono);line-height:1}
+.packet-no span{font-size:.55rem;letter-spacing:.12em;text-transform:uppercase}
+.packet-no b{font-size:1rem}
+.packet-title .tiny{color:#4A4F3E}
+.packet-title h3{margin:2px 0 4px;color:#1E2318;font-size:1.3rem;overflow-wrap:anywhere}
+.pair{margin:0;color:#4A4F3E;font-size:.82rem;display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+.tok{display:inline-flex;align-items:center;gap:5px;padding:2px 9px 2px 3px;border-radius:999px;background:#1E2318;color:#F4EEDC;font-weight:700;font-size:.78rem;text-decoration:none}
+.tok i{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-style:normal;font-size:.65rem}
+.tok.gold i{background:var(--link)}
+.packet-art svg{width:64px;height:64px}
+.packet-art .soil,.furrow .soil{fill:#6B4A33}.seedc{fill:#C9A06A}.stem{stroke:#2F6B25;stroke-width:1.6;fill:none}.leafc{fill:#2F6B25}.petal{fill:#E2774E}.core{fill:#F0C75E}
+.furrow{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:2px;padding:12px 16px 8px;background:linear-gradient(180deg,transparent 70%,#2A1F17 70%,#2A1F17 82%,transparent 82%)}
+.furrow span{display:block;aspect-ratio:1;opacity:.35}
+.furrow span.grown{opacity:1}
+.furrow .stem{stroke:var(--accent)}.furrow .leafc{fill:var(--accent)}
+.packet .figs{margin:4px 16px 0}
+.yield{margin:12px 16px 0;font-size:.88rem}
+.yield b{color:var(--accent-text);font-family:var(--font-mono)}
+.plot{margin:14px 16px 0;padding:14px;border:1px solid var(--line-strong);border-radius:var(--radius-md);background:var(--surface)}
+.plot-figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.plot-figs .sub{margin:0 0 2px}
+.plot-figs strong{display:block;font-family:var(--font-mono);font-size:1.05rem;color:var(--ink);overflow-wrap:anywhere}
+.plot-figs .harvest{font-size:1.35rem;color:var(--link)}
+.fuel-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+.plot form button[type=submit]{margin-top:10px}
+.plot details{padding:12px 0 0}
+.planted{margin:14px 16px 16px}
+.packet>.tiny{margin:14px 16px 16px}
+.packet[data-stage=done] .packet-top{background:#D9D0B4}
+.empty.field-empty{border:1px dashed var(--line-strong);border-radius:var(--radius-lg)}

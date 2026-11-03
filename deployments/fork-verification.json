@@ -1,0 +1,9 @@
+{
+  "localOnly": true,
+  "chainId": 677,
+  "checkedAt": "2026-11-03T09:48:13.412Z",
+  "farmstand": {
+    "flow": "open season → stake → exit (withdraw + harvest)",
+    "paid": "601000000000000"
+  }
+}

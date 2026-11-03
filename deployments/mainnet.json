@@ -1,0 +1,36 @@
+{
+  "chainId": 677,
+  "network": "mainnet",
+  "deployer": "0x766d0d810eCF822e02df47CDb5A389777f291895",
+  "local": false,
+  "contracts": {
+    "Farmstand": "0xfbdc3de238ddefee6dcf77f707f4de0a7b1de2b3"
+  },
+  "actions": {
+    "deploy:Farmstand": {
+      "hash": "0x8252f0f6faebc3b7c3fb5f1e8fa304f6b0af8a4ceec2461cb5ca807f1084b439",
+      "receipt": {
+        "transactionHash": "0x8252f0f6faebc3b7c3fb5f1e8fa304f6b0af8a4ceec2461cb5ca807f1084b439",
+        "contractAddress": "0xfbdc3de238ddefee6dcf77f707f4de0a7b1de2b3",
+        "blockNumber": "28953516",
+        "gasUsed": "1492515",
+        "gasPrice": "20000000000"
+      }
+    }
+  },
+  "gasSpentWei": "209669280000000000",
+  "ready": true,
+  "infrastructure": {
+    "USDT": "0xaBabc7Ddc03e501d190C676BF3d92ef0e6e87a3C",
+    "WBOT": "0xD5452816194a3784dBa983426cCe7c122F4abd30",
+    "router": "0x07032d47A1b9f8460cBeE9dC17c1d3E438693929",
+    "quoter": "0x034A705b36067cff99ABf5C662Be881cBd8d0176",
+    "fee": 3000
+  },
+  "launched": {
+    "farmstand": "2026-11-03T09:53:00.622Z"
+  },
+  "sourceHashes": {
+    "Farmstand": "0x849652f790ea0a924d6c8460e7c23ac5da31b50784bb0153419126d45d852697"
+  }
+}
